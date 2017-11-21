@@ -1,0 +1,39 @@
+
+*******************************************************
+Short notes of the Balaguruswamy: Important points only
+*******************************************************
+
+* << insertion or put to operator. This operator can be used as left shift operator also. This is the very good exmple of Operator Overloading.
+* >> extraction or get from operator.
+* Commonly using header files:
+	<cassert>
+	<cctype>
+	<cfloat>
+	<climit>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	....
+	....
+
+* main()
+	In c++, it returns an integer type value to the Operating system.
+	So, every main() should be end with return(0).
+
+* Structure of C++ program
+	Include Files
+	Class declarations
+	Member Function definition
+	Main function
+
+* Organize program into 3 seperate files:
+	i. Class declarations in 1st file
+	ii. Member function definitions are in 2nd file
+	iii. Main Program -  Which includes previous files.
+
+
+
+
+
+
