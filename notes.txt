@@ -33,7 +33,16 @@ Short notes of the Balaguruswamy: Important points only
 	iii. Main Program -  Which includes previous files.
 
 
-
+* Keywords and their meanings:
+	$ asm- To embed the assembly language statements.
+	$ auto- Storage class for local variable. Visible only in block or function. By default local varibles are of type auto.
+	$ catch- Used to describe exception handler code that catches the exception.
+	$ const_cast- It is a casting operator used to explicitly override const or volatile objects.
+	$ continue- It causes skipping of statements till the end of a loop in which it appear.
+	$ delete- It is an operator used to remove objects from memory that were created using new operators.
+	$ dynamic_cast- It is casting operator used to cast the type of an object at runtime.
+	$ enum- Used to create a user-defined integer data type.
+	$ 
 
 
 
