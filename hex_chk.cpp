@@ -5,11 +5,11 @@ int main()
 {
 	float output;
 	int j,i;
-	float x; 
+	int x; 
 	float o1, o2, o3, o4;
 	int y1, y2, y3, y4;
 	
-	i = 0x790;
+	i = 0xFFC;
 
 	if (i > 0x7F0)
 	{
@@ -24,7 +24,7 @@ int main()
 		i = i;	
 	}
 	
-	x = i * 0.0625;
+	x = i >> 4;
 	
 	y1 = i & 0x0001;
 	y2 = i & 0x0002;
@@ -39,6 +39,8 @@ int main()
 	o2 = y2 * 0.125;
 	o3 = y3 * 0.25;
 	o4 = y4 * 0.5;
+
+	cout << o1 << "  " << o2 << "  " << o3 << "  " << o4 << endl;
 
 	output = x + o1 + o2 + o3 + o4;
 	
