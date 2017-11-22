@@ -53,4 +53,24 @@ Short notes of the Balaguruswamy: Important points only
 
 * Union members can only be manipulated exclusive of each other
 
+* Storage classes:
+	i. Automatic: Keyword auto
+	ii. External: Keyword extern
+	iii. Static: Keyword static
+	iv. Register: Keyword Register: used to store value in CPU registers.
+
+* Arrays: Size should be one larger than number of characters in the string.
+
+* Pointers: 
+	
+	int *ip;	//int pointer
+	ip = &x;	//address of x is assigned to ip
+	*ip = 10; 	//10 assigned to x through indirection
+
+	char * const ptr1 = "GOOD"; 	// Constant pointer. We cannot modify the address of ptr1.
+	int const * ptr2 = &m; 		// Pointer to a constant. The contents of what it point to cannot be changed.
+	const char * const cp = "xyz" 	// Both the pointer and the variables as constant.
+
+
+	
 
