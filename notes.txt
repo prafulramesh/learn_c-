@@ -44,5 +44,13 @@ Short notes of the Balaguruswamy: Important points only
 	$ enum- Used to create a user-defined integer data type.
 	$ 
 
+* A void pointer cannot be assigned directly to other type pointer. Need to use cast operator.
+	eg:
+		void *ptr1;
+		char *ptr2;
+		ptr2 = ptr1; //This is valid in C but not valid in C++
+		ptr2 = (char *)ptr1; //This is valid in C++
+
+* Union members can only be manipulated exclusive of each other
 
 
