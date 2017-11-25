@@ -71,6 +71,62 @@ Short notes of the Balaguruswamy: Important points only
 	int const * ptr2 = &m; 		// Pointer to a constant. The contents of what it point to cannot be changed.
 	const char * const cp = "xyz" 	// Both the pointer and the variables as constant.
 
+* Type Compatibility:
+	--int, short int, long int, unsigned char, char, signed char etc are considered as different types.
+	--Use of these restrictions are inorder to support function overloading where two functions with same name are
+	  distinguished using the type of function arguments.
 
+* Declaration of variables:
+	C++ allows declaration anywhere with in the program, but C not
+* dynamic initialization of variable is permitted. 
+
+* Reference Variable:
+	A reference variable provides an alternative name for the previously defined variable.
+	Syntax: data-type & ref_name = variable_name;
+	eg1:-
+		float total = 100;
+		float & sum = total; //Sum and total points to same memory location.
+
+		int a[10];
+		int & x = a[10];
+
+		int x;
+		int  *p = &x;
+		int & m = *p;
+
+		int & n = 50;
 	
+	eg2:- 
+		void f(int & x) 	// uses reference
+		{
+			x = x+10;	// x is incremented; so also m
+		}
+		int main()
+		{
+			int m = 10;
+			f(m);		// function call
+			.....
+			.....
+		}
+	
+		This type of functions are know as "Call by Reference".
+
+* Operators in C++
+	All C operators are valid in C++. Additional operators are
+	
+		::	Scope resolution operator
+		::*	Pointer to member declarator
+		->*	Pointer to member operator
+		.*	Pointer to member operator
+		delete	Memory release operator
+		endl	Line feed operator
+		new	Memory allocation operator
+		setw	Field width operator
+
+* Scope resolution operator:
+	Application: To identify the class to which a member function belongs.
+
+****	When tried to compile conio.h in g++/Gcc, error is coming. This conio.h can be used in windows based systems only. 
+	So installed sudo apt-get install libncurses5-dev libncursesw5-dev and type the following command to compiles
+		g++ file_name.cpp -lncurses
 
