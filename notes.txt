@@ -130,3 +130,8 @@ Short notes of the Balaguruswamy: Important points only
 	So installed sudo apt-get install libncurses5-dev libncursesw5-dev and type the following command to compiles
 		g++ file_name.cpp -lncurses
 
+* Manipulators:
+	endl, setw, fixed and setprecision: See the code p_3_4.cpp
+
+
+
